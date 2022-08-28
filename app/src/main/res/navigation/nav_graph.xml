@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.bai1.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_bt2Fragment"
+            app:destination="@id/bt2Fragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_bt1Fragment"
+            app:destination="@id/bt1Fragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_bt3Fragment"
+            app:destination="@id/bt3Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bt1Fragment"
+        android:name="com.example.bai1.Bt1Fragment"
+        android:label="Bt1Fragment" />
+    <fragment
+        android:id="@+id/bt2Fragment"
+        android:name="com.example.bai1.Bt2Fragment"
+        android:label="Bt2Fragment" />
+    <fragment
+        android:id="@+id/bt3Fragment"
+        android:name="com.example.bai1.Bt3Fragment"
+        android:label="Bt3Fragment" />
+</navigation>
